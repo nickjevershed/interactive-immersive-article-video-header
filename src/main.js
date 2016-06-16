@@ -1,7 +1,6 @@
 var videoHeader = require('./html/video.html');
 var detect = require('./utils/detect.js');
 
-
 function boot(el) {
 
 
@@ -16,7 +15,7 @@ function boot(el) {
 function insertVideo(videourl) {
 	console.log('writing')
 	videoHeader = videoHeader.replace('{{videourl}}',videourl);
-    document.getElementsByTagName("header")[0].innerHTML = videoHeader + document.getElementsByTagName("header")[0].innerHTML;
+    document.getElementsByTagName("picture")[0].innerHTML = document.getElementsByTagName("picture")[0].innerHTML + videoHeader;
 	
 }
 
